@@ -89,7 +89,7 @@ class Bust
     {
         $fullPath = $this->getBasePath() . DIRECTORY_SEPARATOR . $path;
 
-        if ( ! $this->filesystem->exists($fullPath)) {
+        if (! $this->filesystem->exists($fullPath)) {
             return null;
         }
 
