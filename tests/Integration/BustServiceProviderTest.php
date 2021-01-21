@@ -25,4 +25,26 @@ class BustServiceProviderTest extends TestCase
             app()->resolved(Bust::class)
         );
     }
+
+    /**
+     * @return void
+     */
+    public function testBustAliasShouldBeASingleton(): void
+    {
+        // By default, Bust should not be resolved
+        $this->assertFalse(
+            app()->resolved('bust')
+        );
+
+        // But it should be resolved on demand
+        $bust = app('bust');
+
+        $this->assertInstanceOf(Bust::class, $bust);
+
+        $this->assertTrue(
+            app()->resolved('bust')
+        );
+
+        $this->assertEquals($bust, app('bust'));
+    }
 }
