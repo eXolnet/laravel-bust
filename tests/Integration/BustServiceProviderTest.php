@@ -3,6 +3,7 @@
 namespace Exolnet\Bust\Tests\Integration;
 
 use Exolnet\Bust\Bust;
+use Exolnet\Bust\BustServiceProvider;
 
 class BustServiceProviderTest extends TestCase
 {
@@ -46,5 +47,15 @@ class BustServiceProviderTest extends TestCase
         );
 
         $this->assertEquals($bust, app('bust'));
+    }
+
+    /**
+     * @return void
+     * @test
+     */
+    public function testProvides(): void
+    {
+        $bust = new BustServiceProvider($this->app);
+        self::assertEquals(['bust'], $bust->provides());
     }
 }
