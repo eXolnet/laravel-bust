@@ -147,6 +147,6 @@ class Bust
     {
         $querySeparator = strpos($path, '?') !== false ? '&' : '?';
 
-        return $path .$querySeparator. http_build_query([$parameter => $version]);
+        return $path . $querySeparator . http_build_query([$parameter => $version]);
     }
 }
