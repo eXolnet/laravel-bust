@@ -23,7 +23,7 @@ class BustServiceProvider extends ServiceProvider
         }
 
         $this->publishes([
-            __DIR__.'/../config/bust.php' => config_path('bust.php'),
+            __DIR__ . '/../config/bust.php' => config_path('bust.php'),
         ], 'config');
     }
 
@@ -32,7 +32,7 @@ class BustServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/bust.php', 'bust');
+        $this->mergeConfigFrom(__DIR__ . '/../config/bust.php', 'bust');
 
         $this->app->singleton('bust', function () {
             return $this->app->make(Bust::class);
