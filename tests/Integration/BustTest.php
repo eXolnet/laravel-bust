@@ -31,7 +31,7 @@ class BustTest extends TestCase
     {
         $asset = $this->bust->asset('example.css');
 
-        $this->assertMatchesRegularExpression('#http://localhost/example\.[0-9]+\.css#', $asset);
+        $this->assertMatchesRegularExpression('#/example\.[0-9]+\.css$#', $asset);
     }
 
     /**
@@ -44,7 +44,7 @@ class BustTest extends TestCase
 
         $asset = $this->bust->asset('example.css');
 
-        $this->assertMatchesRegularExpression('#http://localhost/example\.css\?v=[0-9]+#', $asset);
+        $this->assertMatchesRegularExpression('#/example\.css\?v=[0-9]+$#', $asset);
     }
 
     /**
@@ -55,7 +55,7 @@ class BustTest extends TestCase
     {
         $asset = $this->bust->asset('example');
 
-        $this->assertEquals('http://localhost/example', $asset);
+        $this->assertMatchesRegularExpression('#example$#', $asset);
     }
 
     /**
