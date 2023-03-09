@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](https://poser.pugx.org/eXolnet/laravel-bust/v/stable?format=flat-square)](https://packagist.org/packages/eXolnet/laravel-bust)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/github/workflow/status/eXolnet/laravel-bust/tests?label=tests&style=flat-square)](https://github.com/eXolnet/laravel-bust/actions?query=workflow%3Atests)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/eXolnet/laravel-bust/tests.yml?label=tests&style=flat-square)](https://github.com/eXolnet/laravel-bust/actions?query=workflow%3Atests)
 [![Total Downloads](https://img.shields.io/packagist/dt/eXolnet/laravel-bust.svg?style=flat-square)](https://packagist.org/packages/eXolnet/laravel-bust)
 
 Provide cache busting helpers to Laravel.
