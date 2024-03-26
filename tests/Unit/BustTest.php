@@ -8,7 +8,7 @@ use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Filesystem\Filesystem;
 use Mockery as m;
 
-class BustTest extends UnitTest
+class BustTest extends UnitTestCase
 {
     /**
      * @var \Illuminate\Contracts\Config\Repository|\Mockery\MockInterface
