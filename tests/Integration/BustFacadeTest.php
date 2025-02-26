@@ -9,7 +9,6 @@ class BustFacadeTest extends TestCase
 {
     /**
      * @return void
-     * @test
      */
     public function testFacadeRootIsBustClass(): void
     {
