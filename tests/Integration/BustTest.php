@@ -25,7 +25,6 @@ class BustTest extends TestCase
 
     /**
      * @return void
-     * @test
      */
     public function testAsset(): void
     {
@@ -36,7 +35,6 @@ class BustTest extends TestCase
 
     /**
      * @return void
-     * @test
      */
     public function testAssetWithQueryParameter(): void
     {
@@ -49,7 +47,6 @@ class BustTest extends TestCase
 
     /**
      * @return void
-     * @test
      */
     public function testAssetWithoutExtension(): void
     {
@@ -60,7 +57,6 @@ class BustTest extends TestCase
 
     /**
      * @return void
-     * @test
      */
     public function testFilename(): void
     {

@@ -51,7 +51,6 @@ class BustServiceProviderTest extends TestCase
 
     /**
      * @return void
-     * @test
      */
     public function testProvides(): void
     {
